@@ -259,7 +259,7 @@
    (0 = January). date: null means no target date set.
    ════════════════════════════════════════════════════════════════════════ */
 
-const TODAY = new Date(2026, 5, 29); // Sun Jun 28, 2026
+const TODAY = new Date(2026, 5, 30); // Sun Jun 28, 2026
 
 const PROJECTS = [
   { name:"ERD + Deposco + Scale", cal:"ERD", status:"backlog", date:new Date(2026, 8, 24), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/erd-deposco-scale-924-0ad4882ed4c5" },
@@ -279,7 +279,7 @@ const PROJECTS = [
   { name:"Troubadour Goods Ltd. + (Custom WMS) + HML", cal:"Troubadour", status:"planned", date:new Date(2026, 7, 18), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/troubadour-goods-ltd-custom-wms-hml-826-16618a679381" },
   { name:"Rowing Blazers + Jazz + Cart.com", cal:"Rowing Blazers", status:"planned", date:new Date(2026, 7, 18), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/rowing-blazers-jazz-cartcom-826-c9132b02bedf" },
   { name:"Canopy + Custom WMS + DCL", cal:"Canopy", status:"planned", date:new Date(2026, 6, 15), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/canopy-custom-wms-dcl-715-697c553cd85f" },
-  { name:"Aaron Levine + Deposco + Scale 3PL", cal:"Aaron Levine", status:"progress", date:new Date(2026, 5, 10), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/aaron-levine-deposco-scale-3pl-726-cbd2462297aa" },
+  { name:"Aaron Levine + Deposco + Scale 3PL", cal:"Aaron Levine", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/aaron-levine-deposco-scale-3pl-726-cbd2462297aa" },
   { name:"TPJ + Capacity + Custom", cal:"TPJ", status:"planned", date:new Date(2026, 6, 31), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/tpj-capacity-custom-july-bd4628e0eb69" },
   { name:"Porte & Hall + Fosdick + Deposco", cal:"Porte & Hall", status:"progress", date:new Date(2026, 4, 29), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/porte-and-hall-fosdick-deposco-61-d75453b3badb" },
   { name:"WMS Template Reference", cal:null, status:"backlog", date:null, lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/wms-template-reference-91a14eb96df2" },
@@ -290,7 +290,7 @@ const PROJECTS = [
   { name:"Nads + Bluebox Follow Up", cal:null, status:"backlog", date:null, lead:"—", url:"https://linear.app/gooddaysoftware/project/nads-bluebox-follow-up-e892598a6414" },
   { name:"Ten Thousand + Outerspace Follow Up", cal:null, status:"backlog", date:null, lead:"—", url:"https://linear.app/gooddaysoftware/project/ten-thousand-outerspace-follow-up-712fbe50f07b" },
   { name:"ThighSociety + Custom + Evolve", cal:"ThighSociety", status:"planned", date:new Date(2026, 5, 5), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-custom-evolve-targeted-go-live-date-b7e144ed3ad9" },
-  { name:"ThighSociety + Stallion + Shiphero", cal:"ThighSociety", status:"progress", date:new Date(2026, 4, 4), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-stallion-2-warehouses-usca-shiphero-targeted-go-live-date-c9855e8b0d3a" },
+  { name:"ThighSociety + Stallion + Shiphero", cal:"ThighSociety", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-stallion-2-warehouses-usca-shiphero-targeted-go-live-date-c9855e8b0d3a" },
   { name:"The Prepared Hero + Stord + Stord", cal:"Prepared Hero", status:"progress", date:new Date(2026, 6, 1), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/the-prepared-hero-stord-stord-41-9bceb4dc0a1a" },
 ];
 
@@ -303,7 +303,6 @@ const PTO_COLORS = {
 
 // Inclusive start/end. From the GoodDay PTO Google Calendar.
 const PTO_RAW = [
-  { person:"River Crawford", start:new Date(2026, 5, 22), end:new Date(2026, 5, 22) },
   { person:"James Hargett", start:new Date(2026, 6, 1), end:new Date(2026, 6, 2) },
   { person:"Willy Husted", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
   { person:"Tim Kauer", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },

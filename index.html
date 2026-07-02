@@ -259,13 +259,14 @@
    (0 = January). date: null means no target date set.
    ════════════════════════════════════════════════════════════════════════ */
 
-const TODAY = new Date(2026, 5, 30); // Sun Jun 28, 2026
+const TODAY = new Date(2026, 6, 2); // Sun Jun 28, 2026
 
 const PROJECTS = [
+  { name:"Chief Gear LLC + (No WMS) + Self-ship", cal:"Chief Gear", status:"backlog", date:new Date(2026, 8, 29), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/chief-gear-llc-no-wms-self-ship-929-e1180c4e657f" },
   { name:"ERD + Deposco + Scale", cal:"ERD", status:"backlog", date:new Date(2026, 8, 24), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/erd-deposco-scale-924-0ad4882ed4c5" },
   { name:"Danielle Guizio NY + CloudX + Bergen", cal:"Danielle Guizio", status:"backlog", date:new Date(2026, 8, 7), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/danielle-guizio-ny-cloudx-bergen-831-df851f41adfd" },
-  { name:"12th Tribe + Whiplash + Ryder/Whiplash", cal:"12th Tribe", status:"backlog", date:new Date(2026, 8, 7), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/12th-tribe-whiplash-ryderwhiplash-831-f3879bfaa9e0" },
-  { name:"Clayton & Crume + ShipStation + Self-ship (Pending Katana)", cal:"Clayton & Crume", status:"backlog", date:new Date(2026, 8, 17), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/clayton-and-crume-shipstation-self-ship-831-pending-katana-bc77b208fa68" },
+  { name:"12th Tribe + Whiplash + Ryder/Whiplash", cal:"12th Tribe", status:"backlog", date:new Date(2026, 7, 31), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/12th-tribe-whiplash-ryderwhiplash-831-f3879bfaa9e0" },
+  { name:"Clayton & Crume + ShipStation + Self-ship (Pending Katana)", cal:"Clayton & Crume", status:"backlog", date:new Date(2026, 7, 31), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/clayton-and-crume-shipstation-self-ship-831-pending-katana-bc77b208fa68" },
   { name:"Eric Javits + CloudX + Bergen", cal:"Eric Javits", status:"backlog", date:new Date(2026, 8, 10), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/eric-javits-cloudx-bergen-910-18b6df4229dc" },
   { name:"Equip Foods + Pattern + Pattern", cal:"Equip Foods", status:"backlog", date:new Date(2026, 8, 1), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/equip-foods-pattern-pattern-91-92a6ef2a582c" },
   { name:"Equip Foods + Emerson + Emerson", cal:"Equip Foods", status:"backlog", date:new Date(2026, 8, 1), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/equip-foods-emerson-emerson-91-103b6d61f190" },
@@ -289,8 +290,8 @@ const PROJECTS = [
   { name:"Minnow + IDF + BlueBox", cal:"Minnow", status:"planned", date:new Date(2026, 5, 3), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/minnow-idf-bluebox-63-2396d63c80df" },
   { name:"Nads + Bluebox Follow Up", cal:null, status:"backlog", date:null, lead:"—", url:"https://linear.app/gooddaysoftware/project/nads-bluebox-follow-up-e892598a6414" },
   { name:"Ten Thousand + Outerspace Follow Up", cal:null, status:"backlog", date:null, lead:"—", url:"https://linear.app/gooddaysoftware/project/ten-thousand-outerspace-follow-up-712fbe50f07b" },
-  { name:"ThighSociety + Custom + Evolve", cal:"ThighSociety", status:"planned", date:new Date(2026, 5, 5), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-custom-evolve-targeted-go-live-date-b7e144ed3ad9" },
-  { name:"ThighSociety + Stallion + Shiphero", cal:"ThighSociety", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-stallion-2-warehouses-usca-shiphero-targeted-go-live-date-c9855e8b0d3a" },
+  { name:"ThighSociety + Custom + Evolve", cal:"ThighSociety", status:"planned", date:new Date(2026, 5, 5), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/thighsociety-custom-evolve-targeted-go-live-date-b7e144ed3ad9" },
+  { name:"ThighSociety + Stallion (2 warehouses US/CA) + Shiphero", cal:"ThighSociety", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-stallion-2-warehouses-usca-shiphero-targeted-go-live-date-c9855e8b0d3a" },
   { name:"The Prepared Hero + Stord + Stord", cal:"Prepared Hero", status:"progress", date:new Date(2026, 6, 1), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/the-prepared-hero-stord-stord-41-9bceb4dc0a1a" },
 ];
 

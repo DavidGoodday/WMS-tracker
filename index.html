@@ -259,9 +259,10 @@
    (0 = January). date: null means no target date set.
    ════════════════════════════════════════════════════════════════════════ */
 
-const TODAY = new Date(2026, 6, 8); // Sun Jun 28, 2026
+const TODAY = new Date(2026, 6, 13); // Sun Jun 28, 2026
 
 const PROJECTS = [
+  { name:"Kismet Pets, Inc. + ShipMonk + ShipMonk", cal:"Kismet Pets", status:"backlog", date:new Date(2026, 9, 7), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/kismet-pets-inc-shipmonk-shipmonk-917-8574bcdfac45" },
   { name:"Peabody Home + WMS TBD + 3PL TBD", cal:"Peabody Home", status:"backlog", date:new Date(2026, 7, 31), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/peabody-home-wms-tbd-3pl-tbd-831-2461d3743a53" },
   { name:"Chief Upland + Shipstation + Self-ship", cal:"Chief Upland", status:"backlog", date:new Date(2026, 8, 29), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/chief-upland-shipstation-self-ship-929-e1180c4e657f" },
   { name:"ERD + Deposco + Scale", cal:"ERD", status:"backlog", date:new Date(2026, 8, 24), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/erd-deposco-scale-924-0ad4882ed4c5" },
@@ -279,17 +280,14 @@ const PROJECTS = [
   { name:"Troubadour Goods Ltd. + Blue Yonder + Ryder", cal:"Troubadour", status:"planned", date:new Date(2026, 7, 18), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/troubadour-goods-ltd-blue-yonder-ryder-826-6bb884f0a522" },
   { name:"Troubadour Goods Ltd. + (Custom WMS) + HML", cal:"Troubadour", status:"planned", date:new Date(2026, 7, 18), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/troubadour-goods-ltd-custom-wms-hml-826-16618a679381" },
   { name:"Rowing Blazers + Jazz + Cart.com", cal:"Rowing Blazers", status:"planned", date:new Date(2026, 7, 18), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/rowing-blazers-jazz-cartcom-826-c9132b02bedf" },
-  { name:"Canopy + Custom WMS + DCL", cal:"Canopy", status:"planned", date:new Date(2026, 6, 30), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/canopy-custom-wms-dcl-715-697c553cd85f" },
+  { name:"Canopy + Custom WMS + DCL", cal:"Canopy", status:"progress", date:new Date(2026, 6, 30), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/canopy-custom-wms-dcl-715-697c553cd85f" },
   { name:"Aaron Levine + Deposco + Scale 3PL", cal:"Aaron Levine", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/aaron-levine-deposco-scale-3pl-726-cbd2462297aa" },
   { name:"TPJ + Capacity + Custom", cal:"TPJ", status:"planned", date:new Date(2026, 6, 30), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/tpj-capacity-custom-july-bd4628e0eb69" },
-  { name:"Porte & Hall + Fosdick + Deposco", cal:"Porte & Hall", status:"progress", date:new Date(2026, 7, 1), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/porte-and-hall-fosdick-deposco-61-d75453b3badb" },
   { name:"WMS Template Reference", cal:null, status:"backlog", date:null, lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/wms-template-reference-91a14eb96df2" },
-  { name:"New York or Nowhere + Ship Essential + Shiphero", cal:"NY or Nowhere", status:"progress", date:new Date(2026, 5, 10), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/new-york-or-nowhere-ship-essential-shiphero-early-june-ac3aa35d6e8e" },
+  { name:"New York or Nowhere + Ship Essential + Shiphero", cal:"NY or Nowhere", status:"progress", date:new Date(2026, 5, 10), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/new-york-or-nowhere-ship-essential-shiphero-early-june-ac3aa35d6e8e" },
   { name:"Sarah Flint + Moda + Daytex", cal:"Sarah Flint", status:"planned", date:new Date(2026, 6, 30), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/sarah-flint-moda-daytex-july-a48f559d0bee" },
   { name:"Minnow + TBD + Extensiv", cal:"Minnow", status:"planned", date:new Date(2026, 6, 23), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/minnow-tbd-extensiv-targeted-go-live-date-3d6c1e564eb7" },
   { name:"Minnow + IDF + BlueBox", cal:"Minnow", status:"planned", date:new Date(2026, 6, 23), lead:"River Crawford", url:"https://linear.app/gooddaysoftware/project/minnow-idf-bluebox-63-2396d63c80df" },
-  { name:"ThighSociety + Custom + Evolve", cal:"ThighSociety", status:"planned", date:new Date(2026, 5, 5), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-custom-evolve-targeted-go-live-date-b7e144ed3ad9" },
-  { name:"ThighSociety + Stallion (2 warehouses US/CA) + Shiphero", cal:"ThighSociety", status:"progress", date:new Date(2026, 6, 3), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/thighsociety-stallion-2-warehouses-usca-shiphero-targeted-go-live-date-c9855e8b0d3a" },
   { name:"Halfdays + NLRP", cal:"Halfdays", status:"planned", date:new Date(2025, 6, 11), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/halfdays-nlrp-targeted-go-live-78-see-details-b4a0008f9ffa" },
 ];
 
@@ -302,7 +300,6 @@ const PTO_COLORS = {
 
 // Inclusive start/end. From the GoodDay PTO Google Calendar.
 const PTO_RAW = [
-  { person:"James Hargett", start:new Date(2026, 6, 1), end:new Date(2026, 6, 2) },
   { person:"Willy Husted", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
   { person:"Tim Kauer", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
   { person:"David Ortiz", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },

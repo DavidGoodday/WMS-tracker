@@ -259,15 +259,15 @@
    (0 = January). date: null means no target date set.
    ════════════════════════════════════════════════════════════════════════ */
 
-const TODAY = new Date(2026, 6, 13); // Sun Jun 28, 2026
+const TODAY = new Date(2026, 6, 15); // Sun Jun 28, 2026
 
 const PROJECTS = [
-  { name:"Kismet Pets, Inc. + ShipMonk + ShipMonk", cal:"Kismet Pets", status:"backlog", date:new Date(2026, 9, 7), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/kismet-pets-inc-shipmonk-shipmonk-917-8574bcdfac45" },
+  { name:"Kismet Pets, Inc. + ShipMonk + ShipMonk", cal:"Kismet Pets", status:"backlog", date:new Date(2026, 8, 17), lead:"Willy Husted", url:"https://linear.app/gooddaysoftware/project/kismet-pets-inc-shipmonk-shipmonk-917-8574bcdfac45" },
   { name:"Peabody Home + WMS TBD + 3PL TBD", cal:"Peabody Home", status:"backlog", date:new Date(2026, 7, 31), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/peabody-home-wms-tbd-3pl-tbd-831-2461d3743a53" },
   { name:"Chief Upland + Shipstation + Self-ship", cal:"Chief Upland", status:"backlog", date:new Date(2026, 8, 29), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/chief-upland-shipstation-self-ship-929-e1180c4e657f" },
-  { name:"ERD + Deposco + Scale", cal:"ERD", status:"backlog", date:new Date(2026, 8, 24), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/erd-deposco-scale-924-0ad4882ed4c5" },
-  { name:"Danielle Guizio NY + CloudX + Bergen", cal:"Danielle Guizio", status:"backlog", date:new Date(2026, 8, 7), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/danielle-guizio-ny-cloudx-bergen-831-df851f41adfd" },
-  { name:"12th Tribe + Whiplash + Ryder/Whiplash", cal:"12th Tribe", status:"backlog", date:new Date(2026, 7, 31), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/12th-tribe-whiplash-ryderwhiplash-831-f3879bfaa9e0" },
+  { name:"ERD + Deposco + Scale", cal:"ERD", status:"backlog", date:new Date(2026, 7, 31), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/erd-deposco-scale-831-0ad4882ed4c5" },
+  { name:"Danielle Guizio NY + CloudX + Bergen", cal:"Danielle Guizio", status:"backlog", date:new Date(2026, 7, 27), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/danielle-guizio-ny-cloudx-bergen-827-df851f41adfd" },
+  { name:"12th Tribe + Whiplash + Ryder/Whiplash", cal:"12th Tribe", status:"backlog", date:new Date(2026, 7, 26), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/12th-tribe-whiplash-ryderwhiplash-826-f3879bfaa9e0" },
   { name:"Clayton & Crume + ShipStation + Self-ship (Pending Katana)", cal:"Clayton & Crume", status:"backlog", date:new Date(2026, 7, 31), lead:"Matt Pham", url:"https://linear.app/gooddaysoftware/project/clayton-and-crume-shipstation-self-ship-831-pending-katana-bc77b208fa68" },
   { name:"Eric Javits + CloudX + Bergen", cal:"Eric Javits", status:"backlog", date:new Date(2026, 8, 10), lead:"David Ortiz", url:"https://linear.app/gooddaysoftware/project/eric-javits-cloudx-bergen-910-18b6df4229dc" },
   { name:"Equip Foods + Pattern + Pattern", cal:"Equip Foods", status:"backlog", date:new Date(2026, 8, 1), lead:"Seth Horton", url:"https://linear.app/gooddaysoftware/project/equip-foods-pattern-pattern-91-92a6ef2a582c" },
@@ -300,19 +300,18 @@ const PTO_COLORS = {
 
 // Inclusive start/end. From the GoodDay PTO Google Calendar.
 const PTO_RAW = [
-  { person:"Willy Husted", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
-  { person:"Tim Kauer", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
-  { person:"David Ortiz", start:new Date(2026, 6, 6), end:new Date(2026, 6, 6) },
   { person:"Seth Horton", start:new Date(2026, 6, 9), end:new Date(2026, 6, 13) },
   { person:"James Hargett", start:new Date(2026, 6, 14), end:new Date(2026, 6, 17) },
   { person:"David Ortiz", start:new Date(2026, 6, 20), end:new Date(2026, 6, 24) },
   { person:"David Ortiz", start:new Date(2026, 6, 27), end:new Date(2026, 6, 27) },
+  { person:"River Crawford", start:new Date(2026, 7, 7), end:new Date(2026, 7, 7) },
   { person:"River Crawford", start:new Date(2026, 7, 24), end:new Date(2026, 7, 28) },
   { person:"Matt Wardell", start:new Date(2026, 7, 28), end:new Date(2026, 7, 28) },
   { person:"David Ortiz", start:new Date(2026, 8, 14), end:new Date(2026, 8, 18) },
   { person:"River Crawford", start:new Date(2026, 8, 18), end:new Date(2026, 8, 18) },
   { person:"Seth Horton", start:new Date(2026, 9, 1), end:new Date(2026, 9, 5) },
   { person:"Matt Wardell", start:new Date(2026, 10, 5), end:new Date(2026, 10, 9) },
+  { person:"David Ortiz", start:new Date(2026, 10, 5), end:new Date(2026, 10, 9) },
 ];
 
 /* ════════════════════════════════════════════════════════════════════════
